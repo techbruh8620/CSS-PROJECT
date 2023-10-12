@@ -1,0 +1,360 @@
+@import "variables";
+
+@mixin displayFlex($align) {
+    display: flex;
+    justify-content: space-between;
+    align-items:$align ;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    font-family:  'work sans' Arial, Helvetica, sans-serif;
+    line-height: 1.42857143;
+    
+    
+} 
+
+.header {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+
+
+}
+ 
+
+.nav-link { 
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    &:hover{
+        color: $textcolor;
+}
+}
+
+.nav-Item a {
+    text-decoration: none;
+    &:hover{
+        color: $textcolor;
+}
+}
+
+.active {
+    color:$textcolor !important;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+.para-text {
+    display: flex;
+    justify-content: space-around;
+    color: $textcolor;
+}
+
+// Styling for 
+
+.intro-text {
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.head-text{
+    color: $textcolor;
+    font-weight: 100;
+}
+
+.desc-div {
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.desc-text {
+    width: 50%;
+    
+}
+
+.desc-text p {
+    color: #333;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.box-one{
+    background-color: $textcolor;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+
+.select-div{
+    -webkit-appearance: listbox;
+    background-color: $textcolor;
+    border-bottom: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+
+}
+
+.text-style{
+    color: rgba(255, 255, 255, 0.863);
+}
+
+
+.box-two{
+    background-color: rgb(77, 77, 216);
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.select-divv{
+    -webkit-appearance: listbox;
+    background-color:rgb(77, 77, 216);
+    border-bottom: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+
+}
+
+.box-three {
+    background-color: rgb(14, 14, 20);
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+
+.select-divf {
+    -webkit-appearance: listbox;
+    background-color:rgb(14, 14, 20);
+    border-bottom: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.select-divff {
+    -webkit-appearance: listbox;
+    background-color:rgb(14, 14, 20);
+    border-bottom: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+
+}
+
+.for-section {
+display: flex;
+justify-content: space-around;
+text-align: center;
+width: 70%;
+ margin: 20px auto;
+
+}
+
+.text-diff {
+color: $textcolor;
+}
+
+.mid-section {
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(204, 240, 229);
+}
+
+.head-sec{
+    color: $textcolor;
+    padding: 20px;
+}
+
+.para-text{
+    color: #524a4a;
+}
+.log-div{
+    padding: 50px;
+}
+
+.inner-div {
+    display: flex;
+    padding-left: 30px;
+
+    
+}
+.cont-div {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+    width: 250px;
+    color: $textcolor;
+}
+
+.inner-dif{
+    display: flex;
+    justify-content: space-around;
+}
+.cont-dif {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 250px;
+    color: $textcolor;
+}
+
+.text-div {
+   text-align: center;
+   margin-top: 70px;
+   
+}
+
+.mid-head{
+    color: $textcolor;
+}
+
+
+.mid-paragraph {
+    color: #524a4a;
+}
+
+.picture-div{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 900px;
+    margin-top: 50px;
+    margin-left: 300px;
+
+}
+
+.pic-div{
+margin: 5px;
+&:hover{
+    background-color:gainsboro ;
+}
+
+}
+
+.pic-div:hover{
+    transform: random($limit: -10px);
+}
+
+
+
+.pic-text {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
+
+}
+
+.pic-paragraph{
+ color: #524a4a;
+}
+
+.btn-text{
+    background-color: rgb(83, 83, 228);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.picture-dif {
+    display: flex;
+    align-content: space-around ;
+    margin-top: -500px;
+    margin-left: 260px;
+    &:hover{
+        background-color: hsl(0, 9%, 89%);
+    }
+}
+
+
+.picture-difff{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -200px;
+    margin-top: -100px;
+    margin-left: 130px;
+    padding: 130px;
+    &:hover{
+        background-color: hsl(0, 9%, 89%);
+    }
+}
+
+.mid-text{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.last-head{
+    color: #524a4a;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.last-btn{
+    background-color:rgb(83, 83, 228); 
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.footer-text{
+    color: #979292;
+    font-weight: 10;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-text a{
+    color:  rgb(83, 83, 228);
+}
+
+.footer-txt{
+    color: #979292;
+    text-align: center;
+}
+
+
+
+
+
