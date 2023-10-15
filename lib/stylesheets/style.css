@@ -74,7 +74,8 @@ body {
 .box-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: -50px;
+  padding: 200px;
 }
 
 .box-one {
@@ -86,7 +87,6 @@ body {
 }
 
 .select-div {
-  -webkit-appearance: listbox;
   background-color: rgb(24, 151, 151);
   border-bottom: 3px solid white;
   border-top: none;
@@ -109,7 +109,6 @@ body {
 }
 
 .select-divv {
-  -webkit-appearance: listbox;
   background-color: rgb(77, 77, 216);
   border-bottom: 3px solid white;
   border-top: none;
@@ -128,7 +127,6 @@ body {
 }
 
 .select-divf {
-  -webkit-appearance: listbox;
   background-color: rgb(14, 14, 20);
   border-bottom: 3px solid white;
   border-top: none;
@@ -139,7 +137,6 @@ body {
 }
 
 .select-divff {
-  -webkit-appearance: listbox;
   background-color: rgb(14, 14, 20);
   border-bottom: 3px solid white;
   border-top: none;
@@ -159,6 +156,18 @@ body {
 
 .text-diff {
   color: rgb(24, 151, 151);
+  margin-top: -100px;
+}
+
+.img-diff {
+  margin-top: -200px;
+  padding-left: 100px;
+}
+
+.img-dif {
+  padding-left: 30px;
+  margin-left: 50px;
+  width: 70px;
 }
 
 .mid-section {
@@ -197,12 +206,13 @@ body {
 .inner-dif {
   display: flex;
   justify-content: space-around;
+  padding-left: 20px;
 }
 
 .cont-dif {
   background-color: white;
   padding: 20px;
-  margin: 20px;
+  margin-left: 10px;
   height: 200px;
   width: 250px;
   color: rgb(24, 151, 151);
@@ -234,11 +244,7 @@ body {
   margin: 5px;
 }
 .pic-div:hover {
-  background-color: gainsboro;
-}
-
-.pic-div:hover {
-  transform: 1;
+  filter: drop-shadow(10px 10px 10px #555);
 }
 
 .pic-text {
@@ -267,7 +273,7 @@ body {
   margin-left: 260px;
 }
 .picture-dif:hover {
-  background-color: hsl(0, 9%, 89%);
+  filter: drop-shadow(10px 10px 10px #555);
 }
 
 .picture-difff {
@@ -279,7 +285,7 @@ body {
   padding: 130px;
 }
 .picture-difff:hover {
-  background-color: hsl(0, 9%, 89%);
+  filter: drop-shadow(10px 10px 10px #555);
 }
 
 .mid-text {
@@ -317,4 +323,9 @@ body {
 .footer-txt {
   color: #979292;
   text-align: center;
+}
+
+.non {
+  text-decoration: none !important;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

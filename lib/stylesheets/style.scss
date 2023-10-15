@@ -18,7 +18,7 @@ body{
     
     
 } 
-
+// header section styling start
 .header {
    display: flex;
    justify-content: space-around;
@@ -59,8 +59,9 @@ body{
     justify-content: space-around;
     color: $textcolor;
 }
+// header section styling end
 
-// Styling for 
+// Styling for sub section
 
 .intro-text {
     text-align: center;
@@ -91,7 +92,8 @@ body{
 .box-container{
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: -50px;
+    padding: 200px;
 }
 
 .box-one{
@@ -104,7 +106,7 @@ body{
 
 
 .select-div{
-    -webkit-appearance: listbox;
+    
     background-color: $textcolor;
     border-bottom: 3px solid white;
     border-top: none;
@@ -129,7 +131,6 @@ body{
 }
 
 .select-divv{
-    -webkit-appearance: listbox;
     background-color:rgb(77, 77, 216);
     border-bottom: 3px solid white;
     border-top: none;
@@ -150,7 +151,6 @@ body{
 
 
 .select-divf {
-    -webkit-appearance: listbox;
     background-color:rgb(14, 14, 20);
     border-bottom: 3px solid white;
     border-top: none;
@@ -163,7 +163,6 @@ body{
 
 
 .select-divff {
-    -webkit-appearance: listbox;
     background-color:rgb(14, 14, 20);
     border-bottom: 3px solid white;
     border-top: none;
@@ -178,14 +177,28 @@ body{
 display: flex;
 justify-content: space-around;
 text-align: center;
-width: 70%;
+width: 100px%;
  margin: 20px auto;
 
 }
 
 .text-diff {
 color: $textcolor;
+margin-top: -200px;
 }
+
+.img-diff {
+    margin-top: -200px;
+    padding-left: 100px;
+}
+
+.img-dif {
+    padding-left: 30px;
+    margin-left: 50px;
+    width: 70px;
+
+}
+// styling for sub-section end
 
 .mid-section {
     display: flex;
@@ -223,11 +236,12 @@ color: $textcolor;
 .inner-dif{
     display: flex;
     justify-content: space-around;
+    padding-left: 20px;
 }
 .cont-dif {
     background-color: white;
     padding: 20px;
-    margin: 20px;
+     margin-left: 10px;
     height: 200px;
     width: 250px;
     color: $textcolor;
@@ -236,6 +250,7 @@ color: $textcolor;
 .text-div {
    text-align: center;
    margin-top: 70px;
+
    
 }
 
@@ -248,6 +263,7 @@ color: $textcolor;
     color: #524a4a;
 }
 
+// styling for picture section start
 .picture-div{
     display: flex;
     justify-content: space-around;
@@ -255,20 +271,18 @@ color: $textcolor;
     height: 900px;
     margin-top: 50px;
     margin-left: 300px;
+    
 
 }
 
 .pic-div{
 margin: 5px;
 &:hover{
-    background-color:gainsboro ;
+ filter: drop-shadow(10px 10px 10px #555);   
 }
 
 }
 
-.pic-div:hover{
-    transform: random($limit: -10px);
-}
 
 
 
@@ -299,8 +313,8 @@ margin: 5px;
     margin-top: -500px;
     margin-left: 260px;
     &:hover{
-        background-color: hsl(0, 9%, 89%);
-    }
+        filter: drop-shadow(10px 10px 10px #555);   
+       }
 }
 
 
@@ -312,10 +326,12 @@ margin: 5px;
     margin-left: 130px;
     padding: 130px;
     &:hover{
-        background-color: hsl(0, 9%, 89%);
-    }
+        filter: drop-shadow(10px 10px 10px #555);   
+       }
 }
-
+// styling picture section end
+ 
+// mid section styling start
 .mid-text{
     text-align: center;
     margin-top: 200px;
@@ -336,8 +352,9 @@ margin: 5px;
     margin-top: 20px;
     cursor: pointer;
 }
+// mid section  styling end
 
-
+// footer section styling start
 .footer-text{
     color: #979292;
     font-weight: 10;
@@ -354,6 +371,11 @@ margin: 5px;
     text-align: center;
 }
 
+.non {
+    text-decoration: none !important;
+    font-weight: 600;
+}
+// footer section styling end
 
 
 
